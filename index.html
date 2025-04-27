@@ -1,62 +1,39 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Галерея Відео</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background: #f0f4f8;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h1 {
-      color: #333;
-      margin-bottom: 30px;
-    }
-    .video-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      width: 100%;
-      max-width: 1000px;
-    }
-    .video-item {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .video-item:hover {
-      transform: translateY(-5px);
-    }
-    video {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відео Головна Сторінка</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Наша Галерея Відео</h1>
-  <div class="video-gallery">
-    <div class="video-item">
-      <video controls>
-        <source src="slava-ukr-2mp4_HGTuIysN" type="video/mp4">
-      </video>
-    </div>
-    <div class="video-item">
-      <video controls>
-        <source src="slava-ukr-3mp4_KDJ4sObS" type="video/mp4">
-      </video>
-    </div>
-    <div class="video-item">
-      <video controls>
-        <source src="slava-ukraini-glorymp4_g8DE9ANT" type="video/mp4">
-      </video>
-    </div>
+
+    <header>
+        <h1>Вітаємо на нашому сайті відео</h1>
+    </header>
+
+    <main>
+        <div class="video-container">
+            <div class="video">
+                <h2>Відео 1</h2>
+                <video controls>
+                    <source src="slava-ukr-2mp4_HGTuIysN" type="video/mp4">
+                    Ваш браузер не підтримує відео.
+                </video>
+            </div>
+            <div class="video">
+                <h2>Відео 2</h2>
+                <video controls>
+                    <source src="slava-ukr-3mp4_KDJ4sObS" type="video/mp4">
+                    Ваш браузер не підтримує відео.
+                </video>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Всі права захищено</p>
+    </footer>
+
+</body>
+</html>
